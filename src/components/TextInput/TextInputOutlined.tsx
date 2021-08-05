@@ -384,8 +384,13 @@ const Outline = ({
       {
         backgroundColor,
         borderRadius: theme.roundness,
-        borderWidth: hasActiveOutline ? 2 : 1,
-        borderColor: hasActiveOutline ? activeColor : outlineColor,
+        backgroundColor,
+        borderRadius: theme.roundness,
+        borderWidth:hasActiveOutline ? 2 : 1,
+        borderTopColor:'#e0e0e0',
+        borderBottomColor:hasActiveOutline ?'#3d8f44' : '#e0e0e0',
+        borderLeftColor:'#e0e0e0',
+        borderRightColor:'#e0e0e0',
       },
     ]}
   />
